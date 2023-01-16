@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	max-width: 100%;
+}
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+section {
+	border-bottom: 1px solid #dadada;
+}
+.container {
+	max-width: 1200px;
+	margin:0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.header-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}
+.header {
+	height: 110px;
+	border-bottom: 1px solid #dadada;
+}
+
+.nav-list {
+	display: flex;
+}
+.nav-item {
+	font-size: 15px;
+	line-height: 1;
+}
+.nav-item:not(:last-child) {
+	margin-right: 50px;
+}
+.nav-link {
+	color: #1c1c1c;
+}
+.nav-item.is-active .nav-link{
+	color:#3172b9;
+}
+.btn {
+	font-size: 12px;
+	line-height: 1;
+	color: #fff;
+	background-color:#3172b9;
+	padding: 15px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+}
+.text-center {
+	text-align: center;
+}
+.header-btn {
+	margin-left: 40px;
+}
+
+/*---Hero---*/
+
+.hero-container {
+	padding-top: 120px;
+	padding-bottom: 130px;
+}
+.section-hero-heading {
+	margin-bottom: 20px;
+}
+.section-hero-description {
+	margin-bottom: 30px;
+}
+.section-hero-button-description {
+	margin-top: 15px;
+}
+.section-hero-ssl-icon {}
+
+/*---What We Do---*/
+
+.section-do {
+	padding-top: 140px;
+	padding-bottom: 100px;
+}
+.section-description {
+	margin-top: 25px;
+}
+.section-do-list {
+	margin-top: 50px;
+	display: flex;
+}
+.section-do-item {
+	flex: 1 1 25%;
+}
+.section-do-item:not(:last-child) {
+	margin-right: 30px;
+}
+.section-do-icon {}
+.section-do-iten-heading {}
+.section-do-item-description {}
+
+/*Our Happy Clients*/
+.section-clients {
+	padding-top: 95px;
+	padding-bottom: 160px;
+}
+.clients-container {
+	
+}
+.clients-heading {
+	margin-bottom: 40px;
+}
+.section-clients-list {
+	display: flex;
+	align-items: flex-end;
+}
+.section-clients-item {
+	flex: 1 1 33.33%;
+	outline: red dotted 3px;
+}
+.section-clients-item:not(:last-child) {
+	margin-right: 30px;
+}
+.section-clients-testimonial {
+	padding-top: 50px;
+	padding-left: 30px;
+	padding-right: 35px;
+}
+.section-clients-user {
+	display: flex;
+	padding-left: 30px;
+	align-items: center;
+}
+.section-clients-avatar {
+	width: 61px;
+	height: 61px;
+	border: 2px solid #3172b9;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+.section-clients-user-info {}
+.section-clients-username {}
+.section-clients-user-description {}
+
+/*---Contacts---*/
+.section-contacts {
+	padding-top: 60px;
+	padding-bottom: 150px;
+}
+.contacts-container {}
+.contacts-heading {
+	margin-bottom: 100px;
+}
+.section-contacts-list {
+	display: flex;
+}
+.section-contacts-item {
+	display: flex;
+	flex: 1 1 33.33%;
+	flex-direction: column;
+	justify-content: center;
+	outline: red dotted 3px;
+
+}
+.section-contacts-item:not(:last-child) {
+	margin-right: 30px;
+}
+.section-contacts-icon {
+	display: block;
+	height: 30px;
+	margin-bottom: 25px;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: auto 100%;
+	background-color: transparent;
+}
+.section-contacts-heading {
+	margin-bottom: 30px;
+}
+.section-contacts-info {
+	max-width: 250px;
+}
+.section-contacts-icon-gps{
+	background-image: url('../img/gps.png');
+}
+.section-contacts-icon-phone{
+	background-image: url('../img/phone.png');
+}
+.section-contacts-icon-mail{
+	background-image: url('../img/mail.png');
+	background-size: 31px;
+}
+
+/*---Footer---*/
+
+.footer {}
+.footer-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-bottom: 30px;
+}
+.footer-left {
+	display: flex;
+	align-items: center;
+}
+.footer-logo {}
+.footer-logo-img {}
+.footer-copyrights {
+	padding-left: 15px;
+}
+.footer-right {
+	display: flex;
+}
+.footer-nav {}
+.footer-nav-list {
+	display: flex;
+}
+.footer-nav-item {
+	padding-right: 35px;
+}
+.footer-nav-link {}
+.footer-social-list {
+	display: flex;
+}
+.footer-social-item {}
+.footer-social-item:not(:last-child) {
+	padding-right: 30px;
+}
+.footer-social-link {
+}
+.footer-social-icon {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #444;
+}
