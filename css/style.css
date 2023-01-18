@@ -21,6 +21,13 @@ html {
 section {
 	border-bottom: 1px solid #dadada;
 }
+p {
+	font-size: 14px;
+	color: #787878;
+}
+.section-do-icon {
+	fill: rgb(49, 114, 185);
+}
 .container {
 	max-width: 1200px;
 	margin:0 auto;
@@ -64,7 +71,6 @@ section {
 }
 .btn {
 	font-size: 12px;
-	line-height: 1;
 	color: #fff;
 	background-color:#3172b9;
 	padding: 15px 16px;
@@ -77,7 +83,8 @@ section {
 }
 .header-btn {
 	margin-left: 40px;
-	padding: 18px 30px;
+	padding: 18px 37px;
+	font-size: 15px;
 }
 
 /*---Hero---*/
@@ -105,9 +112,19 @@ section {
 }
 .section-hero-description {
 	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 25px;
 }
 .section-hero-button-description {
+	width: 257px;
 	margin-top: 15px;
+	font-size: 11px;
+	color: #787878;
+	text-align: center;
+}
+.hero-btn {
+	font-size: 17px;
+	padding: 20px 50px;
 }
 .section-hero-ssl-icon {}
 
@@ -119,20 +136,48 @@ section {
 }
 .section-description {
 	margin-top: 25px;
+	font-size: 16px;
+	line-height: 21px;
 }
 .section-do-list {
 	margin-top: 50px;
 	display: flex;
 }
 .section-do-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #e4e4e4;
+	border-radius: 5px;
 	flex: 1 1 25%;
+	height: 320px;
+}
+.section-do-item.is-active {
+	border: #3172b9 3px solid;
+	background: #4086d3;
+	color: #fff;
+}
+.section-do-item.is-active .section-do-item-description {
+	color: #fff;
+}
+.section-do-item.is-active .section-do-icon {
+	fill: rgb(255, 255, 255);
 }
 .section-do-item:not(:last-child) {
 	margin-right: 30px;
 }
-.section-do-icon {}
-.section-do-iten-heading {}
-.section-do-item-description {}
+.section-do-icon {
+
+}
+.section-do-iten-heading {
+	padding-top: 33px;
+}
+.section-do-item-description {
+	text-align: center;
+	padding-top: 20px;
+	max-width: 205px;
+}
 
 /*Our Happy Clients*/
 .section-clients {
