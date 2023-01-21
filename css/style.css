@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 
 * {
@@ -143,16 +143,21 @@ p {
 /*---What We Do---*/
 
 .section-do {
+	
+}
+.section-do-container {
 	padding-top: 140px;
 	padding-bottom: 100px;
 }
+.section-do-heading {
+	margin-bottom: 26px;
+}
 .section-description {
-	margin-top: 25px;
+	margin-bottom: 50px;
 	font-size: 16px;
 	line-height: 21px;
 }
 .section-do-list {
-	margin-top: 50px;
 	display: flex;
 }
 .section-do-item {
@@ -193,11 +198,11 @@ p {
 
 /*Our Happy Clients*/
 .section-clients {
-	padding-top: 95px;
-	padding-bottom: 160px;
+	
 }
 .clients-container {
-	
+	padding-top: 95px;
+	padding-bottom: 160px;
 }
 .clients-heading {
 	margin-bottom: 40px;
@@ -243,15 +248,24 @@ p {
 	margin-right: 15px;
 }
 .section-clients-user-info {}
-.section-clients-username {}
-.section-clients-user-description {}
+.section-clients-username {
+	font-size: 17px;
+	line-height: 25px;
+	font-weight: 600;
+}
+.section-clients-user-description {
+	font-size: 14px;
+	line-height: 25px;
+	color: #787878;
+}
 
 /*---Contacts---*/
 .section-contacts {
 	padding-top: 60px;
 	padding-bottom: 150px;
 }
-.contacts-container {}
+.contacts-container {
+}
 .contacts-heading {
 	margin-bottom: 100px;
 }
@@ -284,6 +298,9 @@ p {
 	max-width: 250px;
 	color: #787878;
 }
+.section-contacts-link {
+	color: #787878;
+}
 .section-contacts-icon-gps{
 	background-image: url('../img/gps.png');
 }
@@ -293,6 +310,44 @@ p {
 .section-contacts-icon-mail{
 	background-image: url('../img/mail.png');
 	background-size: 31px;
+}
+
+/*---section form---*/
+
+.section-form {}
+.form-container {
+	padding-top: 120px;
+	padding-bottom: 120px;
+
+}
+.form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding-top: 60px;
+}
+.input:not(:last-of-type) {
+	margin-right: 19px;
+}
+.input {
+	width: 250px;
+	height: 60px;
+	border: 1px solid #dadada;
+	border-radius: 30px;
+	padding-left: 28px;
+}
+.input::placeholder {
+	
+}
+.btn-submit {
+	width: 230px;
+	height: 60px;
+	border: 0px;
+	border-radius: 30px;
+	font-size: 16px;
+	line-height: 21px;
+	margin-left: 32px;
 }
 
 /*---Footer---*/
