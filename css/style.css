@@ -34,6 +34,7 @@ p {
 	padding-right: 15px;
 	padding-left: 15px;
 }
+
 .header-container {
 	display: flex;
 	align-items: center;
@@ -64,6 +65,7 @@ p {
 	color: #1c1c1c;
 	display: flex;
 	align-items: center;
+	transition: color 200ms, box-shadow 200ms ease-out;
 }
 .nav-link:hover {
 	color:#3172b9;
@@ -77,6 +79,12 @@ p {
 	border-radius: 4px;
 	cursor: pointer;
 	display: inline-block;
+	transition: color 200ms, background-color 200ms, outline 200ms ease-out;
+}
+.btn:hover {
+	outline: 2px solid #3172b9;
+	color: #3172b9;
+	background-color: #fff;
 }
 .text-center {
 	text-align: center;
@@ -98,7 +106,7 @@ p {
 	padding-bottom: 130px;
 }
 .hero-content {
-	width: 530px;
+	max-width: 530px;
 }
 .section-hero-heading {
 	margin-bottom: 20px;
@@ -169,6 +177,7 @@ p {
 	border-radius: 5px;
 	flex: 1 1 25%;
 	height: 320px;
+	transition: border 200ms, background 200ms, color 200ms ease-out;
 }
 .section-do-item.is-active {
 	border: #3172b9 3px solid;
@@ -228,14 +237,14 @@ p {
 	margin-left: 30px;
 	min-height: 180px;
 	line-height: 25px;
-	width: 297px;
+	max-width: 297px;
 }
 .section-clients-user {
 	display: flex;
 	margin-left: 30px;
 	align-items: center;
 	padding-bottom: 30px;
-	width: 297px;
+	max-width: 297px;
 	border-top: solid 1px #e4e4e4;
 	padding-top: 30px;
 }
@@ -386,6 +395,10 @@ p {
 }
 .footer-nav-link {
 	color: #787878;
+	transition: color 200ms ease-out;
+}
+.footer-nav-link:hover {
+	color: #3172b9;
 }
 .footer-social-list {
 	display: flex;
@@ -413,4 +426,65 @@ p {
 .footer-social-icon-email {
 	background-image: url(../img/email.png);
 	width: 24px;
+}
+
+@media (max-width:1200px){
+	.container {
+		max-width: 970px;
+	}
+}
+@media (max-width:992px){
+	.container {
+		max-width: 750px;
+	}
+	.section-hero {
+		background-size: auto;
+	}	
+	.section-do-list {
+		flex-direction: column;
+		align-items: center;
+
+	}
+	.section-do-item {
+		width: 270px;
+		flex:  none;
+	}
+	.section-do-item:not(:last-child) {
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+	.section-clients-list {
+		flex-direction: column;
+
+		align-items: center;
+	}
+	.section-clients-item:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	.section-contacts-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.section-contacts-item {
+		display: flex;
+		flex: none;
+		width: 270px;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+	.section-contacts-item:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}
+@media (max-width:767px){
+	.container {
+		max-width: none;
+	}
+	.section-hero {
+		background-image: none;
+	}
 }
